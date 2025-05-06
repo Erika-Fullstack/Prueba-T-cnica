@@ -395,6 +395,7 @@ label {
     font-size: 0.95rem;
     color: #4b5563;
 }
+
 /* FOOTER */
 .footer {
     background-color: #051121;
@@ -409,4 +410,39 @@ label {
     margin-top: 30px;
     color: #888888;
     font-size: 12px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav-menu {
+        flex-direction: row;
+    }
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .contact-text-container,
+    .form-container {
+        max-width: 100%;
+    }
+
+    .boton1 {
+        display: block;
+        margin: 2rem auto 0 auto;
+        text-align: center;
+    }
+    
+    form {
+        padding: 20px;
+    }
+
+    .contact-text {
+        text-align: center;
+    }
 }
