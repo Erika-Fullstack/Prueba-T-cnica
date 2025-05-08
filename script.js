@@ -127,3 +127,21 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   }
   });
+
+
+
+//DESHABILITAR BOTÓN
+function habilitarBtn() {
+  let check = document.getElementById('checkbox');
+  let boton = document.getElementById('logueo');
+
+  if (check.checked) {
+    boton.disabled=false;
+  } else {
+    boton.disbaled=true;
+  }
+}
+
+document.getElementById('checkbox').addEventListener('change',habilitarBtn);
+
+habilitarBtn();
