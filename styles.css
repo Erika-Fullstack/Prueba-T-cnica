@@ -412,6 +412,12 @@ label {
     font-size: 12px;
 }
 
+#fecha-hora-actual {
+    text-align: center;
+    margin-top: 5px;
+    color: #888888;
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .navbar {

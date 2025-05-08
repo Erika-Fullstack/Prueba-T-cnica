@@ -48,7 +48,7 @@
         <div class="category-selector">
             <label for="category" class="selector">Selecciona una categoría:</label>
             <br>
-            <select id="category"> 
+            <select id="category" onchange="showCategory()"> 
                 <option value="">Elige una categoría</option>
                 <option value="comunicacion">Comunicación</option>
                 <option value="educacion">Educación</option>
@@ -77,7 +77,7 @@
 
         <!-- educación -->
         <div id="educacion" class="section">
-            <h2>Comunicación</h2>
+            <h2>Educación</h2>
             <div class="comparacion">
                 <div class="card">
                     <div class="sub-label">Antes</div>
@@ -86,8 +86,8 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nulla illum sequi cum doloribus porro molestiae eius, ab ipsum! Vero minus voluptates nisi odit recusandae molestiae earum nostrum dicta unde.</p>
                 </div>
                 <div class="imagen">
-                    <img id="imagen" src="assets/img/aulatradicional.jpg" alt="">
-                    <button class="button">CAMBIAR</button> <!-- hay que añadir js-->
+                    <img id="imagen1" src="assets/img/aulatradicional.jpg" alt="">
+                    <button class="button1">CAMBIAR</button> <!-- hay que añadir js-->
                 </div>
             </div>
         </div>
@@ -95,7 +95,7 @@
 
     <!-- transporte -->
     <div id="transporte" class="section">
-        <h2>Comunicación</h2>
+        <h2>Transporte</h2>
         <div class="comparacion">
             <div class="card">
                 <div class="sub-label">Antes</div>
@@ -104,15 +104,15 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nulla illum sequi cum doloribus porro molestiae eius, ab ipsum! Vero minus voluptates nisi odit recusandae molestiae earum nostrum dicta unde.</p>
                 </div>
             <div class="imagen">
-                <img id="imagen" src="assets/img/cocheclasico.jpg" alt="">
-                <button class="button">CAMBIAR</button> <!-- hay que añadir js-->
+                <img id="imagen2" src="assets/img/cocheclasico.jpg" alt="">
+                <button class="button2">CAMBIAR</button> <!-- hay que añadir js-->
             </div>
         </div>
     </div>
 
     <!-- ocio -->
     <div id="ocio" class="section">
-        <h2>Comunicación</h2>
+        <h2>Ocio</h2>
         <div class="comparacion">
             <div class="card">
                 <div class="sub-label">Antes</div>
@@ -121,15 +121,15 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nulla illum sequi cum doloribus porro molestiae eius, ab ipsum! Vero minus voluptates nisi odit recusandae molestiae earum nostrum dicta unde.</p>
             </div>
             <div class="imagen">
-                <img id="imagen" src="assets/img/muñecos.jpg" alt="">
-                <button class="button">CAMBIAR</button> <!-- hay que añadir js-->
+                <img id="imagen3" src="assets/img/muñecos.jpg" alt="">
+                <button class="button3">CAMBIAR</button> <!-- hay que añadir js-->
             </div>
         </div>
     </div>
 
     <!-- trabajo -->
     <div id="trabajo" class="section">
-        <h2>Comunicación</h2>
+        <h2>Trabajo</h2>
         <div class="comparacion">
             <div class="card">
                 <div class="sub-label">Antes</div>
@@ -138,8 +138,8 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nulla illum sequi cum doloribus porro molestiae eius, ab ipsum! Vero minus voluptates nisi odit recusandae molestiae earum nostrum dicta unde.</p>
                 </div>
             <div class="imagen">
-                <img id="imagen" src="assets/img/maquinadeescribir.jpg" alt="">
-                <button class="button">CAMBIAR</button> <!-- hay que añadir js-->
+                <img id="imagen4" src="assets/img/maquinadeescribir.jpg" alt="">
+                <button class="button4">CAMBIAR</button> <!-- hay que añadir js-->
             </div>
         </div>
     </div>
@@ -181,8 +181,12 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-bottom">
-            &copy; 2025 Érika Núñez Morales. Todos los derechos reservados.
+          <p>&copy; 2025 Érika Núñez Morales. Todos los derechos reservados.</p>
         </div>
+
+        <div id="fecha-hora-actual">La fecha de hoy es....</div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
