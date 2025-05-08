@@ -46,7 +46,7 @@ h2 {
     font-size: 1.5em;
     border-radius: 8px;
     border: 1px solid #ccc;
-    background-color: #1e3c72; /* Fondo azul para el selector */
+    background-color: #1e3c72;
     color: white;
 }
 
@@ -56,12 +56,12 @@ h2 {
 }
   
 .comparacion {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     gap: 30px;
     align-items: center;
     justify-items: center;
-    text-align: left;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -69,24 +69,13 @@ h2 {
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-  
-.card-text {
-    background-color: #f0f8ff; 
-    padding: 15px;
-    border-radius: 8px;
-}
-  
-.card img {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 8px;
-    transition: opacity 0.5s ease;
+    align-items: center;
+    width: 400px;
+    max-width: 400px;
+    margin: 0 auto;
 }
   
 .card p {
@@ -105,20 +94,7 @@ h2 {
     color: #1e3c72;
 }
 
-.comparison img {
-    margin-top: 15px; 
-}
-  
-.card-text p {
-    font-size: 1em;
-    color: #fff;
-}
-  
-.card img {
-    transition: opacity 0.3s ease;
-}
-  
-.comparison .card:last-child {
+.sub-label p {
     text-align: center;
 }
 
@@ -127,7 +103,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Espacio entre imagen y botón */
+    gap: 10px;
 }
 
 .imagen img {
@@ -139,8 +115,9 @@ h2 {
 }
 
 .imagen button {
-    background: linear-gradient(45deg, purple, #84cae5);
-    border: linear-gradient(45deg, purple, #84cae5);
+    background: #1e3c72;
+    border: #84cae5 solid 3px;
     color: white;
     padding: .5rem;
 }
+

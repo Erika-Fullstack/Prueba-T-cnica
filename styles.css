@@ -451,4 +451,33 @@ label {
     .contact-text {
         text-align: center;
     }
-}
+
+   .comparacion {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .card {
+        width: 360px;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .imagen {
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+    .imagen img {
+        width: 280px;
+    }
+    
+    .sub-label {
+        font-size: 22px;
+    }
+    
+    .imagen button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+} 
